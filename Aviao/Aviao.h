@@ -1,17 +1,20 @@
 #ifndef AVIAO_H
 #define AVIAO_H
+#include<string>
+using std::string;
 
 class Aviao
 {
-    public:
-        double calcPeso();
-        double calcEspPecorrido(double tempo);
-
-    private:
-        double asa;
-        double turbina;
-        double vmax;
-        double amax;
+	public:
+        Aviao();
+		Aviao(string tipo);
+		void ligar();
+		void decolar();
+		void voar(const double &alt);
+	private:
+		bool power;
+		bool decola;
+		bool voa;
 };
 
 #endif // AVIAO_H
