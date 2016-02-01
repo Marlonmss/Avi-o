@@ -7,7 +7,7 @@ class Aviao
 {
 	public:
         Aviao();
-		Aviao(string tipo);
+		Aviao(string tip);
 		void ligar();
 		void decolar();
 		void voar(const double &alt);
@@ -15,6 +15,7 @@ class Aviao
 		bool power;
 		bool decola;
 		bool voa;
+		string tipo;
 };
 
 #endif // AVIAO_H
