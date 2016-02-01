@@ -9,6 +9,7 @@ Aviao::Aviao() : power(0), decola(0), voa(0)
 
 Aviao::Aviao(string tipo)
 {
+	tip = tipo;
 	cout << "O aviao e do tipo: " << tipo << endl;
 	power = 0;
 	decola = 0;
