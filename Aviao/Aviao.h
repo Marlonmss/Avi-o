@@ -6,7 +6,7 @@ using std::string;
 class Aviao
 {
 	public:
-        Aviao();
+        	Aviao();
 		Aviao(string tip);
 		void ligar();
 		void decolar();
