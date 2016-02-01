@@ -15,6 +15,7 @@ class Aviao
 		bool power;
 		bool decola;
 		bool voa;
+		string tip;
 };
 
 #endif // AVIAO_H
