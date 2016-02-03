@@ -6,11 +6,13 @@ using std::string;
 class Aviao
 {
 	public:
-        	Aviao();
-		Aviao(string tipo);
+        Aviao();
+		Aviao(const string &tipo);
+        Aviao(const Aviao &Z);
 		void ligar();
 		void decolar();
 		void voar(const double &alt);
+        static bool piloto_auto;
 	private:
 		bool power;
 		bool decola;

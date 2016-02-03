@@ -8,7 +8,7 @@ using std::endl;
 
 int main()
 {
-	double alt;
+    double alt;
 	string tipo;
 	cout << "Digite o tipo do aviao: " << endl;
 	cin >> tipo;

@@ -4,16 +4,26 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+bool Aviao::piloto_auto = false;
+
 Aviao::Aviao() : power(0), decola(0), voa(0) 
 {}
 
-Aviao::Aviao(string tipo)
+Aviao::Aviao(const string &tipo)
 {
 	tip = tipo;
 	cout << "O aviao e do tipo: " << tip << endl;
 	power = 0;
 	decola = 0;
 	voa = 0;
+}
+
+Aviao::Aviao(const Aviao &Z)
+{
+    power = Z.power;
+    decola = Z.decola;
+    voa = Z.voa;
+    tip = Z.tip;
 }
 
 void Aviao::ligar()
