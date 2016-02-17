@@ -1,5 +1,6 @@
 #include<iostream>
 #include "Aviao.h"
+#include "Data.h"
 using std::cout;
 using std::cin;
 using std::endl;
@@ -52,4 +53,9 @@ void Aviao::decolar()
 void Aviao::voar(const double &alt)
 {
 	cout << "O aviao ira voar ate uma altitude de: " << alt << '.' << endl;
+}
+
+void Aviao::atualizarSoftware(Data datasoft)
+{
+    datasoftware(datasoft.dia, datasoft.mes, datasoft.ano);
 }
