@@ -20,7 +20,7 @@ class Aviao
 		bool decola;
 		bool voa;
 		string tip;
-        static Data datasoftware;
+        static Data datasoftware(0,0,0);
 };
 
 #endif // AVIAO_H

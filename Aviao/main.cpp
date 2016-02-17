@@ -11,7 +11,7 @@ int main()
 {
     cout << "Digite o dia, o mes e o ano: ";
     cin >> d >> m >> a;
-    Aviao::atualizarSoftware(Aviao::datasoftware);
+    Aviao::atualizarSoftware(Aviao::datasoftware(d,m,a));
     double alt;
 	string tipo;
 	cout << "Digite o tipo do aviao: " << endl;
